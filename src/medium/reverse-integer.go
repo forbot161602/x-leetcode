@@ -2,9 +2,9 @@ package main
 
 import "math"
 
-func reverse(input int) int {
+func reverse(number int) int {
 	var reversed int64
-	quotient := int64(input)
+	quotient := int64(number)
 	remainder := int64(0)
 	for {
 		quotient, remainder = quotient/10, quotient%10
