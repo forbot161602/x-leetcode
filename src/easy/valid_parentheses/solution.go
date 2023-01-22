@@ -1,7 +1,5 @@
 package main
 
-// Tag: Stack
-// https://leetcode.com/problems/valid-parentheses/
 func isValid(text string) bool {
 	stack := make([]string, len(text), len(text))
 	cursor := -1

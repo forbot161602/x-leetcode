@@ -1,6 +1,5 @@
 package main
 
-// https://leetcode.com/problems/roman-to-integer/
 func romanToInt(text string) int {
 	chars := []rune(text)
 	result := 0

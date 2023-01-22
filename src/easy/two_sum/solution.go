@@ -1,6 +1,5 @@
 package main
 
-// https://leetcode.com/problems/two-sum/description/
 func twoSum(numbers []int, target int) []int {
 	compIndexes := map[int]int{}
 	for index, number := range numbers {

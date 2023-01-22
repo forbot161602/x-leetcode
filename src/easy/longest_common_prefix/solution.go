@@ -1,10 +1,7 @@
 package main
 
-import (
-	"math"
-)
+import "math"
 
-// https://leetcode.com/problems/longest-common-prefix/description/
 func longestCommonPrefix(texts []string) string {
 	prefix := []rune(texts[0])
 	for _, text := range texts[1:] {
