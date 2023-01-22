@@ -7,7 +7,7 @@ func isValid(text string) bool {
 	cursor := -1
 	for _, char := range text {
 		sign := string(char)
-		info := ParenthesesInfoMap[sign]
+		info := ParenthesesInfos[sign]
 		if info.IsStart {
 			cursor += 1
 			stack[cursor] = info.Type
@@ -22,7 +22,7 @@ func isValid(text string) bool {
 	return cursor == -1
 }
 
-var ParenthesesInfoMap = map[string]ParenthesesInfo{
+var ParenthesesInfos = map[string]ParenthesesInfo{
 	"(": {"()", true},
 	")": {"()", false},
 	"[": {"[]", true},
