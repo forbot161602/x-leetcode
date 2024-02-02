@@ -3,7 +3,7 @@ package main
 func search(numbers []int, target int) int {
 	lower, upper := 0, len(numbers)-1
 	for lower <= upper {
-		middle := (lower + upper) / 2
+		middle := lower + (upper-lower)/2
 		number := numbers[middle]
 		if number == target {
 			return middle

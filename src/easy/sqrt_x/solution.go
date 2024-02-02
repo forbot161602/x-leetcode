@@ -6,7 +6,7 @@ func mySqrt(number int) int {
 	}
 	lower, upper := 1, number/2
 	for lower <= upper {
-		middle := (lower + upper) / 2
+		middle := lower + (upper-lower)/2
 		if middle*middle <= number {
 			lower = middle + 1
 		} else {
