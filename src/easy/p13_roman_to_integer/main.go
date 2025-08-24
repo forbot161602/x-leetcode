@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-// https://leetcode.com/problems/roman-to-integer/
 func main() {
 	solution := romanToInt
 	fmt.Println(solution("XIV"))

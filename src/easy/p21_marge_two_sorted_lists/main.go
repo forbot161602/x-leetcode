@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-// https://leetcode.com/problems/merge-two-sorted-lists/
 func main() {
 	solution := mergeTwoLists
 	list1 := toList([]int{2})
