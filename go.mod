@@ -1,3 +1,3 @@
-module github.com/forbot161602/x-leetcode-golang
+module github.com/forbot161602/x-leetcode
 
-go 1.22
+go 1.24
