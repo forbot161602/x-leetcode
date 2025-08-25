@@ -1,4 +1,4 @@
-// Runtime beats 65.71%, while memory beats 7.21%.
+// Runtime beats 100.00%, while memory beats 11.10%.
 function twoSum(numbers: number[], target: number): number[] {
     const compIndexes: Record<number, number> = {};
     for (const [index, number] of numbers.entries()) {

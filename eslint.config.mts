@@ -41,6 +41,9 @@ export default defineConfig([
                 'off',
             ],
 
+            '@stylistic/brace-style': [
+                'error', '1tbs',
+            ],
             '@stylistic/comma-dangle': [
                 'error', 'never',
             ],

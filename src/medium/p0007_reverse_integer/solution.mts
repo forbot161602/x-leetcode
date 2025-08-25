@@ -1,8 +1,4 @@
 // Runtime beats 87.11%, while memory beats 7.15%.
-
-const MAX_INT32 = 2147483647;
-const MIN_INT32 = -2147483648;
-
 function reverse(value: number): number {
     const isNonnegative = value >= 0;
     let reversed = 0;
@@ -18,5 +14,8 @@ function reverse(value: number): number {
     }
     return isNonnegative ? reversed : -reversed;
 }
+
+const MAX_INT32 = 2147483647;
+const MIN_INT32 = -2147483648;
 
 export default reverse;
