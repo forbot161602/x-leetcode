@@ -41,6 +41,9 @@ export default defineConfig([
                 'off',
             ],
 
+            '@stylistic/comma-dangle': [
+                'error', 'never',
+            ],
             '@stylistic/indent': [
                 'error', 4,
             ],
