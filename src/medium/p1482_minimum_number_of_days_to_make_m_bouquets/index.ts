@@ -1,4 +1,4 @@
-import minDays from './solution.mjs';
+import minDays from './solution.js';
 
 function main() {
     const solution = minDays;

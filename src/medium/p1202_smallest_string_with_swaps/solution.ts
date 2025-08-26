@@ -1,4 +1,4 @@
-// Runtime beats 60.87%, while memory beats 30.44%.
+// Runtime beats 78.26%, while memory beats 60.87%.
 function smallestStringWithSwaps(text: string, pairs: number[][]): string {
     const length = text.length;
     if (length === 1 || pairs.length === 0) {
@@ -11,15 +11,19 @@ function smallestStringWithSwaps(text: string, pairs: number[][]): string {
         UniteRoots(roots, sizes, index1!, index2!);
     }
 
-    const groups: Record<number, number[]> = {};
+    const groups = new Map<number, number[]>();
     for (let index = 0; index < length; index++) {
         const root = findRoot(roots, index);
-        groups[root] ??= [];
-        groups[root].push(index);
+        let indexes = groups.get(root);
+        if (indexes === undefined) {
+            indexes = [];
+            groups.set(root, indexes);
+        }
+        indexes.push(index);
     }
 
     const result = Array<string>(length);
-    for (const indexes of Object.values(groups)) {
+    for (const indexes of groups.values()) {
         indexes.sort((i, j) => i - j);
         const chars = indexes.map(i => text[i]).sort();
         for (let i = 0; i < indexes.length; i++) {

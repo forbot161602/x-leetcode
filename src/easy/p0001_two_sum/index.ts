@@ -1,4 +1,4 @@
-import twoSum from './solution.mjs';
+import twoSum from './solution.js';
 
 function main() {
     const solution = twoSum;

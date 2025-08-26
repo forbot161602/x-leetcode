@@ -1,4 +1,4 @@
-import groupThePeople from './solution.mjs';
+import groupThePeople from './solution.js';
 
 function main() {
     const solution = groupThePeople;

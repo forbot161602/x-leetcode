@@ -1,4 +1,4 @@
-import reverse from './solution.mjs';
+import reverse from './solution.js';
 
 function main() {
     const solution = reverse;

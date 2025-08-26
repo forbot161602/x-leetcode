@@ -1,4 +1,4 @@
-import smallestStringWithSwaps from './solution.mjs';
+import smallestStringWithSwaps from './solution.js';
 
 function main() {
     const solution = smallestStringWithSwaps;

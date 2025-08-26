@@ -1,4 +1,4 @@
-import removeDuplicates from './solution.mjs';
+import removeDuplicates from './solution.js';
 
 function main() {
     const solution = removeDuplicates;
